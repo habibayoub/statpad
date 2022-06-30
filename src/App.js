@@ -9,10 +9,7 @@ export default function App() {
       <header className="App-header">
 
         <div className="jumbotron container-fluid">
-          <div className="">
-
             <h2>StatPad | Stay In The Hoop.</h2>
-          </div>
         </div>
         
           <>

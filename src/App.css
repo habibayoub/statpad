@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar{
+  width: 100vw!important;
+}
+
+.jumbotron {
+  margin-top: -15%;
+  height: 65vh;
+  background-image: url("./content/header.png");
+  background-size: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.55); */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+h2 {
+  padding-top: 13%;
+  padding-right: 50%;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+/* .jumborton headerImg {
+  background-image: url("./content/header.png"), rgba(0, 0, 0, 0.1);
+} */

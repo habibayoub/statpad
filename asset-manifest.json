@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/statpad/static/css/main.fda1a0d3.css",
-    "main.js": "/statpad/static/js/main.13d5042f.js",
+    "main.css": "/statpad/static/css/main.de540bec.css",
+    "main.js": "/statpad/static/js/main.8b19b9a7.js",
     "static/media/header.png": "/statpad/static/media/header.57d57ad9eef67f74fd52.png",
     "static/media/lebron.jpeg": "/statpad/static/media/lebron.6b1bbce0aeb7647a9a57.jpeg",
     "static/media/mj.png": "/statpad/static/media/mj.49ca0bc1e57e32c5e7d8.png",
@@ -15,6 +15,7 @@
     "static/media/bulls.svg": "/statpad/static/media/bulls.fd64ea9148ce2dff323d92f8e16d5500.svg",
     "static/media/dallas.svg": "/statpad/static/media/dallas.0cb0d27058e3ea4a17101f3a74b7e67f.svg",
     "static/media/philly.svg": "/statpad/static/media/philly.ce899ddc0a712b9f2df074d41d59e8e2.svg",
+    "static/media/lang.png": "/statpad/static/media/lang.a6458093d98a6b6e5623.png",
     "static/media/raptors.svg": "/statpad/static/media/raptors.89cb7ca7c3f33b49b7b54de8d1d39e6d.svg",
     "static/media/lakers.svg": "/statpad/static/media/lakers.9cdbb84cb8ed8b4a80b0b7e389fb2774.svg",
     "static/media/rockets.svg": "/statpad/static/media/rockets.5fc6dff9524e336afa392916b2ce988e.svg",
@@ -40,11 +41,11 @@
     "static/media/kings.svg": "/statpad/static/media/kings.670af3fb7d284f51d81d81eb57c8501a.svg",
     "static/media/jazz.svg": "/statpad/static/media/jazz.7b105e49c968d2f7b3756cc90f0c599d.svg",
     "index.html": "/statpad/index.html",
-    "main.fda1a0d3.css.map": "/statpad/static/css/main.fda1a0d3.css.map",
-    "main.13d5042f.js.map": "/statpad/static/js/main.13d5042f.js.map"
+    "main.de540bec.css.map": "/statpad/static/css/main.de540bec.css.map",
+    "main.8b19b9a7.js.map": "/statpad/static/js/main.8b19b9a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.fda1a0d3.css",
-    "static/js/main.13d5042f.js"
+    "static/css/main.de540bec.css",
+    "static/js/main.8b19b9a7.js"
   ]
 }

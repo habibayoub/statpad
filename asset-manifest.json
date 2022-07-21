@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/statpad/static/css/main.fda1a0d3.css",
-    "main.js": "/statpad/static/js/main.ef7c3b17.js",
+    "main.js": "/statpad/static/js/main.13d5042f.js",
     "static/media/header.png": "/statpad/static/media/header.57d57ad9eef67f74fd52.png",
     "static/media/lebron.jpeg": "/statpad/static/media/lebron.6b1bbce0aeb7647a9a57.jpeg",
     "static/media/mj.png": "/statpad/static/media/mj.49ca0bc1e57e32c5e7d8.png",
@@ -41,10 +41,10 @@
     "static/media/jazz.svg": "/statpad/static/media/jazz.7b105e49c968d2f7b3756cc90f0c599d.svg",
     "index.html": "/statpad/index.html",
     "main.fda1a0d3.css.map": "/statpad/static/css/main.fda1a0d3.css.map",
-    "main.ef7c3b17.js.map": "/statpad/static/js/main.ef7c3b17.js.map"
+    "main.13d5042f.js.map": "/statpad/static/js/main.13d5042f.js.map"
   },
   "entrypoints": [
     "static/css/main.fda1a0d3.css",
-    "static/js/main.ef7c3b17.js"
+    "static/js/main.13d5042f.js"
   ]
 }

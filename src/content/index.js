@@ -36,5 +36,6 @@ const images = {
     malone: require("./malone.png").default,
     bean: require("./bean.png").default,
     mj: require("./mj.png").default,
+    lang: require("./lang.png").default,
   }
 export default images;

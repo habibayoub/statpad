@@ -6,6 +6,7 @@ import Login from './Login';
 import Teams from './Teams';
 import Players from './Players';
 import Forums from './Forums';
+import HomeFR from './HomeFR';
 
 function App() {
   return (
@@ -36,6 +37,10 @@ function App() {
 
             <Route path="/forums">
               <Forums />
+            </Route>
+
+            <Route path="/homefr">
+              <HomeFR />
             </Route>
 
           </Switch>

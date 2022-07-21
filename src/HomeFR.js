@@ -4,11 +4,10 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Dropdown from 'react-bootstrap/Dropdown';
-import lang from "./content/lang.png";
 
 
 
-export default function Home() {
+export default function HomeFR() {
   return (
 
      <div className="App">
@@ -24,15 +23,14 @@ export default function Home() {
             <nav className="navbar">
               <Link to="/statpad" style={{color: 'white', textDecoration: 'None'}}><h1>StatPad</h1></Link>
   
-                        <Link to="/login" style={{color: 'white', textDecoration: 'None'}}>Exclusive Perks!</Link>
-                        <Link to="/teams" style={{color: 'white', textDecoration: 'None'}}>Teams</Link>
-                        <Link to="/players" style={{color: 'white', textDecoration: 'None'}}>Players</Link>
+                        <Link to="/login" style={{color: 'white', textDecoration: 'None'}}>Avantages exclusifs!</Link>
+                        <Link to="/teams" style={{color: 'white', textDecoration: 'None'}}>Équipes</Link>
+                        <Link to="/players" style={{color: 'white', textDecoration: 'None'}}>Joueurs</Link>
                         <Link to="/forums" style={{color: 'white', textDecoration: 'None'}}>Forums</Link>
 
-                        <img src={lang} width="4%" alt=""/>
-                        <NavDropdown  title="Dropdown" id="nav-dropdown">
-                            <Dropdown.Item as={Link} to="/statpad">English</Dropdown.Item>
-                            <Dropdown.Item as={Link} to="/homefr">French</Dropdown.Item>
+                        <NavDropdown title="Menu déroulant" id="nav-dropdown">
+                            <Dropdown.Item as={Link} to="/statpad">Anglais</Dropdown.Item>
+                            <Dropdown.Item as={Link} to="/homefr">Français</Dropdown.Item>
                         </NavDropdown>
 
              </nav>
@@ -40,7 +38,7 @@ export default function Home() {
           </Navbar>
         </> 
 
-      <h2 className="different" style={{color:'black', transform: "translate(0,200%)"}}> NBA 2022 Finals <break> Top 3 Perfomers Per Team</break> </h2>
+      <h2 className="different" style={{color:'black', transform: "translate(0,200%)"}}> Finales NBA 2022 <break> Les 3 meilleurs joueurs par équipe</break> </h2>
       
       </header>
 
@@ -51,11 +49,11 @@ export default function Home() {
         <thead>
           <tr>
             <th>Golden State</th>
-            <th>Player</th>
-            <th>Playing Time (Minutes)</th>
+            <th>Jouer</th>
+            <th>Temps de jeu (minutes)</th>
             <th>Points</th>
-            <th>Rebounds</th>
-            <th>Assists</th>
+            <th>Rebonds</th>
+            <th>Aides</th>
           </tr>
         </thead>
         <tbody>
@@ -90,11 +88,11 @@ export default function Home() {
         <thead>
           <tr>
             <th>Boston Celtics</th>
-            <th>Player</th>
-            <th>Playing Time (Minutes)</th>
+            <th>Jouer</th>
+            <th>Temps de jeu (minutes)</th>
             <th>Points</th>
-            <th>Rebounds</th>
-            <th>Assists</th>
+            <th>Rebonds</th>
+            <th>Aides</th>
           </tr>
         </thead>
         <tbody>

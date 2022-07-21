@@ -63,3 +63,8 @@ h2:not(.different) {
 .different {
   text-align: center;
 }
+
+#nav-dropdown{
+  color: black;
+  background-color: white;
+}

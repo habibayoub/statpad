@@ -2,7 +2,7 @@ import React from "react"
 import {Button, Navbar, Nav, Container, Jumbotron} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const SignUp = () => {
+const Login = () => {
     return ( 
     <div className="App">
     <header className="App-header">
@@ -58,7 +58,7 @@ const SignUp = () => {
                                 </button>
                                 </div>
                                 <p className="signup text-right mt-2">
-                                Don't have an account? <a href="/SignUp">Make one now</a>
+                                Don't have an account? <Link to="/signup">Make one now</Link>
                                 </p>
                             </div>
 
@@ -77,4 +77,4 @@ const SignUp = () => {
     )
 }
  
-export default SignUp;
+export default Login;

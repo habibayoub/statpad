@@ -15,16 +15,16 @@ export default function Home() {
          </div>
         
           <>
-          <Navbar bg="primary" variant="dark">
+          <Navbar bg="primary" variant="light">
             <Container>
             <nav className="navbar">
                  <h1>StatPad</h1>
                  {/* <div className="links"> */}
                     {/* <Nav className="m-auto"> */}
-                        <Link to="/login">Exclusive Perks!</Link>
-                        <Link to="/forums">Forums</Link>
-                        <Link to="/teams">Teams</Link>
-                        <Link to="/players">Players</Link>
+                        <Link to="/login" style={{color: 'white'}}>Exclusive Perks!</Link>
+                        <Link to="/forums" style={{color: 'white'}}>Forums</Link>
+                        <Link to="/teams" style={{color: 'white'}}>Teams</Link>
+                        <Link to="/players" style={{color: 'white'}}>Players</Link>
                     {/* </Nav> */}
                  {/* </div> */}
              </nav>

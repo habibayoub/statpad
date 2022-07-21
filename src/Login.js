@@ -1,6 +1,10 @@
 import React from "react"
 import {Button, Navbar, Nav, Container, Jumbotron} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import lebron from "./content/lebron.jpeg";
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+
 
 const Login = () => {
     return ( 
@@ -11,12 +15,12 @@ const Login = () => {
           <Navbar fixed="top" bg="primary" variant="dark">
             <Container>
             <nav className="navbar">
-                 <h1>StatPad</h1>
+                 <Link to="/statpad" style={{color: 'white', textDecoration: 'None'}}><h1>StatPad</h1></Link>
 
-                        <Link to="/login">Exclusive Perks!</Link>
-                        <Link to="/forums">Forums</Link>
-                        <Link to="/teams">Teams</Link>
-                        <Link to="/players">Players</Link>
+                        <Link to="/login" style={{color: 'white', textDecoration: 'None'}}>Exclusive Perks!</Link>
+                        <Link to="/teams" style={{color: 'white', textDecoration: 'None'}}>Teams</Link>
+                        <Link to="/players" style={{color: 'white', textDecoration: 'None'}}>Players</Link>
+                        <Link to="/forums" style={{color: 'white', textDecoration: 'None'}}>Forums</Link>
 
              </nav>
 
@@ -24,42 +28,51 @@ const Login = () => {
           </Navbar>
         </>
 
-                    <div class="row align-items-center">
+        <Breadcrumb className="Bread" style={{transform: "translate(0,350%)"}}>
+            <Breadcrumb.Item href="/statpad">Home</Breadcrumb.Item>
+            <Breadcrumb.Item active>Login</Breadcrumb.Item>
+        </Breadcrumb>
 
-                        <div class="col text-white text-center">
-                            <p>Sign In for exclusive perks! get access to live updates and much more!</p>
+                    <div className="row align-items-center">
+
+                        <div className="col text-center">
+                            <p style={{color: 'black'}}>
+                                Sign In for exclusive perks! Get access to live updates and much more!</p>
                         </div>
 
-                        <div class="col text-white text-center">
+                        <div className="col text-center" style={{padding: 15}}>
 
-                        <div className="Auth-form-container">
+                        <div className="Signup-form-container">
                             <form className="Auth-form">
-                            <div className="Auth-form-content">
-                                <h1 className="Auth-form-title">Sign In</h1>
+
+                            <div className="Signup-form-content">
+                                <h1 className="Signup-form-title" style={{color: 'black'}}>Sign In</h1>
                                 <div className="form-group mt-3">
-                                <label>Email address</label>
+                                <label style={{color: 'black'}}>Email address</label>
                                 <input
                                     type="email"
                                     className="form-control mt-1"
-                                    placeholder="Enter email"
-                                />
+                                    placeholder="Enter email"/>
                                 </div>
+
                                 <div className="form-group mt-3">
-                                <label>Password</label>
+                                <label style={{color: 'black'}}>Password</label>
                                 <input
                                     type="password"
                                     className="form-control mt-1"
-                                    placeholder="Enter password"
-                                />
+                                    placeholder="Enter password"/>
                                 </div>
+
                                 <div className="d-grid gap-2 mt-3">
-                                <button type="submit" className="btn btn-primary">
+                                <button type="submit" className="btn btn-danger" >
                                     Submit
                                 </button>
                                 </div>
-                                <p className="signup text-right mt-2">
+
+                                <p className="signup text-right mt-2" style={{color: 'black'}}>
                                 Don't have an account? <Link to="/signup">Make one now</Link>
                                 </p>
+
                             </div>
 
                             </form>
@@ -67,7 +80,9 @@ const Login = () => {
                             
                         </div>
                         <div class="col text-center">
-                           
+                        <div>
+                            <img src={lebron} alt=""/>
+                        </div>
                         </div>
                       </div>
         

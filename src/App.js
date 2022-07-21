@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home';
-import Navbar from './Navbar';
 import SignUp from './SignUp';
 import Login from './Login';
+import Teams from './Teams';
+import Players from './Players';
+import Forums from './Forums';
 
 function App() {
   return (
@@ -16,12 +18,24 @@ function App() {
               <Home />
             </Route>
 
-            <Route path="/Login">
+            <Route path="/login">
               <Login />
             </Route>
 
-            <Route path="/SignUp">
+            <Route path="/signup">
               <SignUp />
+            </Route>
+
+            <Route path="/teams">
+              <Teams />
+            </Route>
+
+            <Route path="/players">
+              <Players />
+            </Route>
+
+            <Route path="/forums">
+              <Forums />
             </Route>
 
           </Switch>

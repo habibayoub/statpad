@@ -1,6 +1,10 @@
 import React from "react"
 import {Button, Navbar, Nav, Container, Jumbotron} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import './SignUp.css';
+
+
 
 const SignUp = () => {
     return ( 
@@ -11,12 +15,12 @@ const SignUp = () => {
           <Navbar fixed="top" bg="primary" variant="dark">
             <Container>
             <nav className="navbar">
-                 <h1>StatPad</h1>
+                <Link to="/statpad" style={{color: 'white', textDecoration: 'None'}}><h1>StatPad</h1></Link>
 
-                        <Link to="/login">Exclusive Perks!</Link>
-                        <Link to="/forums">Forums</Link>
-                        <Link to="/teams">Teams</Link>
-                        <Link to="/players">Players</Link>
+                        <Link to="/login" style={{color: 'white', textDecoration: 'None'}}>Exclusive Perks!</Link>
+                        <Link to="/teams" style={{color: 'white', textDecoration: 'None'}}>Teams</Link>
+                        <Link to="/players" style={{color: 'white', textDecoration: 'None'}}>Players</Link>
+                        <Link to="/forums" style={{color: 'white', textDecoration: 'None'}}>Forums</Link>
 
              </nav>
 
@@ -24,77 +28,113 @@ const SignUp = () => {
           </Navbar>
         </>
 
-                    <div class="row align-items-center">
+        <Breadcrumb className="Bread">
+            <Breadcrumb.Item href="/statpad">Home</Breadcrumb.Item>
+            <Breadcrumb.Item href="/login">Login</Breadcrumb.Item>
+            <Breadcrumb.Item active>Sign Up</Breadcrumb.Item>
+        </Breadcrumb>
 
-                        <div class="col text-white text-center">
-                        <div className="Auth-form-container">
+        <div className="row align-items-center">
 
-                            <form className="Auth-form">
-                                <div className="Auth-form-content">
-                                    <h1 className="Auth-form-title">Personal Information</h1>
-                                    <div className="form-group mt-3">
-                                    <label>Full Name</label>
-                                    <input
-                                        type="name"
-                                        className="form-control mt-1"
-                                        placeholder="Enter Name"
-                                    />
-                                    </div>
-                                    <div className="form-group mt-3">
-                                    <label>Country</label>
-                                    <input
-                                        type="country"
-                                        className="form-control mt-1"
-                                        placeholder="Enter country"
-                                    />
-                                    </div>
-                                </div>
+            <div className="col text-white text-center">
+            <div className="Auth-form-container">
 
-                            </form>
+                <form className="Signup-form">
+                    <div className="Signup-form-content">
+                        <h1 className="Signup-form-title" style={{color: 'black'}}>Personal Information</h1>
+                        <div className="form-group mt-3">
+                        <label style={{color: 'black'}}>Full name</label>
+                        <input
+                            type="name"
+                            className="form-control mt-1"
+                            placeholder="Enter name"/>
                         </div>
-                            
+                        <div className="form-group mt-3">
+                        <label style={{color: 'black'}}>Country</label>
+                        <input
+                            type="country"
+                            className="form-control mt-1"
+                            placeholder="Enter country"/>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+                
+            </div>
+
+
+            <div class="col text-center">
+
+            <div className="Signup-form-container">
+                    <form className="Signup-form">
+                    <div className="Signup-form-content">
+                        <h1 className="Signup-form-title" style={{color: 'black'}}>Profile</h1>
+
+                        <div className="form-group mt-3">
+                        <label style={{color: 'black'}}>Username</label>
+                        <input
+                            type="username"
+                            className="form-control mt-1"
+                            placeholder="@username"/>
                         </div>
 
-                        <div class="col text-white text-center">
+                        <div className="form-group mt-3">
+                        <label style={{color: 'black'}}>Nickname</label>
+                        <input
+                            type="nickname"
+                            className="form-control mt-1"
+                            placeholder="Enter nickname"/>
 
-                        <div className="Auth-form-container">
-                            <form className="Auth-form">
-                            <div className="Auth-form-content">
-                                <h1 className="Auth-form-title">Sign In</h1>
-                                <div className="form-group mt-3">
-                                <label>Email address</label>
-                                <input
-                                    type="email"
-                                    className="form-control mt-1"
-                                    placeholder="Enter email"
-                                />
-                                </div>
-                                <div className="form-group mt-3">
-                                <label>Password</label>
-                                <input
-                                    type="password"
-                                    className="form-control mt-1"
-                                    placeholder="Enter password"
-                                />
-                                </div>
-                                <div className="d-grid gap-2 mt-3">
-                                <button type="submit" className="btn btn-primary">
-                                    Submit
-                                </button>
-                                </div>
-                                <p className="signup text-right mt-2">
-                                Don't have an account? <a href="/SignUp">Make one now</a>
-                                </p>
-                            </div>
+                        </div>
 
-                            </form>
+                    </div>
+                    </form>
+            </div>
+            </div>
+
+            <div className="col text-center">
+
+                <div className="Signup-form-container">
+                    <form className="Signup-form">
+                    <div className="Signup-form-content">
+                        <h1 className="Signup-form-title" style={{color: 'black'}}>Sign Up</h1>
+                        <div className="form-group mt-3">
+                        <label style={{color: 'black'}}>Email address</label>
+                        <input
+                            type="email"
+                            className="form-control mt-1"
+                            placeholder="Enter email"/>
                         </div>
-                            
+                        <div className="form-group mt-3">
+                        <label style={{color: 'black'}}>Password</label>
+                        <input
+                            type="password"
+                            className="form-control mt-1"
+                            placeholder="Enter password"/>
+
                         </div>
-                        <div class="col text-center">
-                           
+                        <div className="form-group mt-3">
+                        <label style={{color: 'black'}}>Re-enter password</label>
+                        <input
+                            type="password"
+                            className="form-control mt-1"
+                            placeholder="Re-enter password"/>
                         </div>
-                      </div>
+
+                        <div className="d-grid gap-2 mt-3">
+                            <button type="submit" className="btn btn-danger" >
+                            Submit
+                            </button>
+                        </div>
+                    
+                    </div>
+                    </form>
+                </div>
+                
+            </div>
+                
+            </div>
         
         </div>
     </header>

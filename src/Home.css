@@ -53,9 +53,13 @@
   -o-background-size: cover;
 }
 
-h2 {
+h2:not(.different) {
   padding-top: 13%;
   padding-right: 50%;
   font-weight: bold;
   font-size: 200%;
+}
+
+.different {
+  text-align: center;
 }

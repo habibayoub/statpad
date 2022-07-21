@@ -30,7 +30,7 @@ const Login = () => {
 
         <Breadcrumb className="Bread" style={{transform: "translate(0,350%)"}}>
             <Breadcrumb.Item href="/statpad">Home</Breadcrumb.Item>
-            <Breadcrumb.Item active>Login</Breadcrumb.Item>
+            <Breadcrumb.Item>Login</Breadcrumb.Item>
         </Breadcrumb>
 
                     <div className="row align-items-center">

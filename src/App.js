@@ -12,7 +12,7 @@ function App() {
         <div className="content">
           <Switch>
 
-            <Route exact path="/statpad/statpadFinal">
+            <Route exact path="/statpad">
               <Home />
             </Route>
 

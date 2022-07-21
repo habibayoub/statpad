@@ -1,32 +1,34 @@
 import React from 'react';
-import {Button, Navbar, Nav, Container, Jumbotron} from 'react-bootstrap';
-import header from "./content/header.png";
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './Home';
+import Navbar from './Navbar';
+import SignUp from './SignUp';
+import Login from './Login';
 
-export default function App() {
+function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <Router>
+      <div className="App">
+        <div className="content">
+          <Switch>
 
-        <div className="jumbotron container-fluid">
-            <h2>StatPad | Stay In The Hoop.</h2>
+            <Route exact path="/statpad/statpadFinal">
+              <Home />
+            </Route>
+
+            <Route path="/Login">
+              <Login />
+            </Route>
+
+            <Route path="/SignUp">
+              <SignUp />
+            </Route>
+
+          </Switch>
         </div>
-        
-          <>
-          <Navbar bg="primary" variant="dark">
-            <Container>
-            <Navbar.Brand href="#home">StatPad</Navbar.Brand>
-            <Nav className="m-auto">
-              <Nav.Link href="#perks">Exclusive Perks!</Nav.Link>
-              <Nav.Link href="#forums">Forums</Nav.Link>
-              <Nav.Link href="#teams">Teams</Nav.Link>
-              <Nav.Link href="#players">Players</Nav.Link>
-            </Nav>
-            </Container>
-          </Navbar>
-        </>
-      </header>
-    </div>
+      </div>
+    </Router>  
   );
 }
 
+export default App;

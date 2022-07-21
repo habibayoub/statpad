@@ -40,6 +40,9 @@
 .navbar{
   width: 100vw!important;
 }
+.navbar.Link {
+  color: white;
+}
 
 .jumbotron {
   margin-top: -15%;

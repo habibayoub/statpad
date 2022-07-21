@@ -30,7 +30,7 @@ const SignUp = () => {
 
         <Breadcrumb className="Bread">
             <Breadcrumb.Item href="/statpad">Home</Breadcrumb.Item>
-            <Breadcrumb.Item href="/login">Login</Breadcrumb.Item>
+            <Breadcrumb.Item> <Link to="/login">Login</Link> </Breadcrumb.Item>
             <Breadcrumb.Item active>Sign Up</Breadcrumb.Item>
         </Breadcrumb>
 
